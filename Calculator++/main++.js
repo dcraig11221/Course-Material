@@ -38,7 +38,7 @@
   }
   /* "Insert" refers to the characters that appear at top left in
   Display window. I'm aware that this will only display a max set of
-  characters, and that needs to be modified */
+  characters, and that needs to be addressed */
   function updateInsertVal(event) {
     if (event.type === 'click') {
       let btnText = event.target.innerText;
