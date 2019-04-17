@@ -211,7 +211,7 @@
   }
   for (let i = 0; i < calcOpBtns.length; i++) {
     calcOpBtns[i].addEventListener('click', performOperation);
-    calcOpBtns[i].addEventListener('click', updateInsertOp);
+    calcOpBtns[i].addEventListener('click', updateInsertVal);
   }
 
   clearBtn.addEventListener('click', clear)
