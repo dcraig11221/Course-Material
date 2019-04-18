@@ -36,15 +36,10 @@
       displayValElement.innerText = displayVal;
     }
   }
-  /* "Insert" refers to the characters that appear at top left in
-  Display window. I'm aware that this will only display a max set of
-  characters, and that needs to be addressed */
+  // "Insert" --> characters appearing top left in Display window. 
   function updateInsertVal(event) {
     if (event.type === 'click') {
       let btnText = event.target.innerText;
-      if (displayVal === '0') {
-        displayVal = '';
-      }
       insertVal.push(btnText);
       insertValElement.innerText = insertVal.join(' ');
     }
@@ -53,9 +48,6 @@
     ];
     if (event.type === 'keydown' && charArray.includes(event.key)) {
       let keyText = event.key;
-      if (displayVal === '0') {
-        displayVal = '';
-      }
       if (event.key === "Enter") {
         keyText = '='
       }
@@ -67,18 +59,12 @@
   function updateInsertOp(event) {
     if (event.type === 'click') {
       let calcOpBtnText = event.target.innerText;
-      if (displayVal === '0') {
-        displayVal = '';
-      }
       insertVal.push(calcOpBtnText);
       insertText = insertVal.join(' ')
       insertValElement.innerText = insertText;
     }
     if (event.type === 'keydown') {
       let calcOpKeyText = event.key;
-      if (displayVal === '0') {
-        displayVal = '';
-      }
       insertVal.push(calcOpKeyText);
       insertText = insertVal.join(' ')
       insertValElement.innerText = insertText;
