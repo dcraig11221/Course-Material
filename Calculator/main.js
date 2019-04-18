@@ -10,6 +10,8 @@ let evalStringArray = [];
 let calcNumBtns = document.getElementsByClassName('calc-number-btn')
 let calcOpBtns = document.getElementsByClassName('calc-operator-btn')
 
+// Let me put some comments in here as a temp test of GH
+
 let updateDisplayVal = (clickObj) => {
   let btnText = clickObj.target.innerText;
   if (displayVal === '0') {
